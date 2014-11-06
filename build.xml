@@ -45,7 +45,10 @@
             includes = "**/*.class"/>
     </target>
 
-
+	<presetdef name="javac">
+	    <javac includeantruntime="false" />
+	 </presetdef>
+	
     <target name="war"
          depends="jar"
      description="builds the application war file">    	
